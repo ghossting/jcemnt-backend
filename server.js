@@ -8,7 +8,7 @@ const rateLimit = require('express-rate-limit');
 const nodemailer = require('nodemailer');
 require('dotenv').config({ path: path.join(__dirname, '.env') });
 
-const { runAsync, getAsync, allAsync } = require('../db');
+const { runAsync, getAsync, allAsync } = require('./db');
 const { validarSenhaParaLogin } = require('./utils/auth-password');
 
 const app = express();
