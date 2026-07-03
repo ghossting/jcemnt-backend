@@ -9,7 +9,7 @@ const nodemailer = require('nodemailer');
 require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 const { runAsync, getAsync, allAsync } = require('./db');
-const { validarSenhaParaLogin } = require('./utils/auth-password');
+const { validarSenhaParaLogin } = require('./utils/auth-password.js');
 
 const app = express();
 const PORT = Number(process.env.PORT) || 10000;
